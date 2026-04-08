@@ -8,14 +8,17 @@ You ship a correct insight and it still dies: the post is too polished to feel t
 
 ## The solution
 
-This repo packages **four small skills**—each a checklist you can drop into Cursor (or any agent workflow) when you are publishing a technical idea: how to surface a paradigm change, how to prove it in miniature, how to promote a viral moment into an **idea file**, and how to keep bold claims honest with one concrete discipline.
+This repo packages **seven small skills**—each a checklist you can drop into Cursor (or any agent workflow) when you are publishing a technical idea: paradigm surfacing, minimal proof, idea-file handoff, hype paired with discipline, **irreducible cores**, **scoreboard-driven loops**, and **stack year reviews**. Together they cover short posts, viral handoffs, teaching artifacts, and annual “sync the field” essays.
 
 | Skill | Folder | What it fixes |
 | ----- | ------ | ------------- |
-| Paradigm Surface | `skills/paradigm-surface/` | Opens with lived workflow change + names the new abstraction |
-| Proof in Miniature | `skills/proof-in-miniature/` | Pairs a strong claim with the smallest falsifiable artifact |
-| Idea File Handoff | `skills/idea-file-handoff/` | Turns attention into an agent-readable spec, not a frozen app |
-| Hype–Discipline Pairing | `skills/hype-discipline-pairing/` | Welds autonomy hype to one verification habit you actually use |
+| Paradigm Surface | `skills/paradigm-surface/` | Lived workflow change + name the abstraction (+ optional metaphor / era label) |
+| Proof in Miniature | `skills/proof-in-miniature/` | Strong claim + smallest falsifiable artifact + “bare bones” framing |
+| Idea File Handoff | `skills/idea-file-handoff/` | Attention → agent-readable spec; Discussions + deep links |
+| Hype–Discipline Pairing | `skills/hype-discipline-pairing/` | Limits, verification habits, paradox, eval skepticism |
+| Irreducible Core | `skills/irreducible-core/` | “Cannot simplify further” + single-file/gist pedagogy + commit-granular twin |
+| Scoreboard Loop | `skills/scoreboard-loop/` | Cheap metric + mutable workspace + agent iteration template |
+| Stack Year Review | `skills/stack-year-review/` | Stack before/after, notable list, tensions, TL;DR |
 
 ## Ground truth (micro-story)
 
@@ -41,12 +44,11 @@ cd ~/karpathy-idea-pattern-skillset
 
 # Install into Cursor user skills (merge; does not delete existing skills)
 mkdir -p ~/.cursor/skills
-cp -R skills/paradigm-surface ~/.cursor/skills/
-cp -R skills/proof-in-miniature ~/.cursor/skills/
-cp -R skills/idea-file-handoff ~/.cursor/skills/
-cp -R skills/hype-discipline-pairing ~/.cursor/skills/
+for s in paradigm-surface proof-in-miniature idea-file-handoff hype-discipline-pairing irreducible-core scoreboard-loop stack-year-review; do
+  cp -R "skills/$s" ~/.cursor/skills/
+done
 
-# Re-run the cp commands anytime you pull updates — same paths overwrite cleanly
+# Re-run anytime you pull updates — same paths overwrite cleanly
 ```
 
 In chat: reference a skill by path, e.g. “follow `~/.cursor/skills/idea-file-handoff/SKILL.md`.”
@@ -58,17 +60,22 @@ In chat: reference a skill by path, e.g. “follow `~/.cursor/skills/idea-file-h
 | `tweet.config.yaml` | Parameterized slots (`post`, `article`, `comment`) for tweet-skill style workflows |
 | `doc/narrative-core.md` | Single source of truth paragraph for mission checks |
 | `doc/x-thread-starter.md` | Thread-shaped draft; put the **link in the last tweet** when promoting the repo |
+| `doc/public-corpus-index.md` | Table of **public** sources useful for tone/structure research (not copied content) |
 
 ## References and prior art
 
 | Concept | Reference | Relation to this repo |
 | ------- | --------- | --------------------- |
-| Idea file (spec over repo dump) | [Karpathy gist — LLM Wiki / idea file](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) | Pattern-level handoff for agents |
-| Vibe coding (naming a workflow shift) | Public coinage and discussion on X, 2025 | **Label the abstraction** step |
+| Idea file (spec over repo dump) | [Gist — LLM Wiki / idea file pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) | **Idea File Handoff** |
+| Vibe coding (named workflow) | Public coinage and discussion on X, 2025 | **Paradigm Surface** — label the abstraction |
+| Year-in-review shape | [2025 LLM Year in Review](https://karpathy.bearblog.dev/year-in-review-2025/) | **Stack Year Review** |
+| Irreducible single-file teaching | [microgpt post](https://karpathy.github.io/2026/02/12/microgpt/) | **Irreducible Core** |
+| Commit-level curriculum | [build-nanogpt](https://github.com/karpathy/build-nanogpt) | **Irreducible Core** companion pattern |
+| Software era framing | [YC AI Startup School talk](https://www.youtube.com/watch?v=LCEmiRjPEtQ) (+ [Software 2.0 essay](https://karpathy.medium.com/software-2-0-a64152b37c35)) | **Paradigm Surface** optional accelerators |
+| Agentic optimization loop | [autoresearch](https://github.com/karpathy/autoresearch) (public repo) | **Scoreboard Loop** |
 | Agent orchestration surface | MCP, IDE integrations, tool permissions | **Paradigm Surface** inventory style |
-| Technical leadership writing | “Problem → story → system” README craft | This README follows the same scannability discipline |
 
-**Disclaimer:** This is an **independent literacy pack** inspired by recurring public patterns in how prominent engineers publish ideas. It is **not** affiliated with or endorsed by any individual; use it as a template, not impersonation.
+**Disclaimer:** This is an **independent literacy pack** inspired by recurring **public** patterns in how prominent engineers publish and teach. It is **not** affiliated with or endorsed by any individual; use it as a template, not impersonation. For primary sources, see `doc/public-corpus-index.md`.
 
 ## Repository layout
 
@@ -78,9 +85,13 @@ skills/
   proof-in-miniature/SKILL.md
   idea-file-handoff/SKILL.md
   hype-discipline-pairing/SKILL.md
+  irreducible-core/SKILL.md
+  scoreboard-loop/SKILL.md
+  stack-year-review/SKILL.md
 doc/
   narrative-core.md
   x-thread-starter.md
+  public-corpus-index.md
 tweet.config.yaml
 LICENSE
 ```

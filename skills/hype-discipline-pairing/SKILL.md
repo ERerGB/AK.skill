@@ -13,6 +13,8 @@ Distilled pattern: keep **radical forecasts** credible by **locking arms with bo
 2. **Name one guardrail you actually use** — Tests-first, review gates, typed boundaries, human approval on writes, etc.
 3. **Tie guardrail to the new workflow** — Explain why the old guardrail *morphs* (e.g., tests become the contract for agents).
 4. **One sentence on misuse** — What should people *not* automate yet?
+5. **Package paradox** — When the tech is both surprisingly capable and surprisingly brittle, say **both in one breath** (same paragraph). Readers trust the forecast more than pure cheer or pure doom.
+6. **Eval skepticism** — If benchmarks diverged from felt reality this year, name the gap and what you use instead (demos, production metrics, task suites). This is discipline for *claims about intelligence*, not a dismissal of measurement.
 
 ## Anti-patterns
 

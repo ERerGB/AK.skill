@@ -8,18 +8,21 @@ Copy and adapt. Link belongs in the **last** tweet per common X playbooks.
 Hot takes die. **Idea files** live—especially when the reader is an agent. I distilled a small skill set for how technical leaders can *ship ideas* in the agent era: discomfort first, name the shift, prove in miniature, hand off a spec.
 
 **Tweet 2 (promise)**  
-Four Cursor-style skills: Paradigm Surface · Proof in Miniature · Idea File Handoff · Hype–Discipline Pairing. Each is a checklist, not a personality.
+Seven Cursor-style skills: Paradigm Surface · Proof in Miniature · Idea File Handoff · Hype–Discipline Pairing · Irreducible Core · Scoreboard Loop · Stack Year Review. Each is a checklist, not a personality.
 
-**Tweet 3–6 (one insight per tweet)**  
+**Tweet 3–7 (one insight per tweet)**  
 - Surface: first-person workflow delta beats abstract “industry trends.”  
-- Label: one handle for the new abstraction so the field can argue cleanly.  
-- Proof: smallest runnable artifact beats a manifesto.  
+- Label / metaphor / era: one handle for the new abstraction—bounded so critics can engage.  
+- Proof: smallest runnable artifact beats a manifesto; say “bare bones” when it is a template.  
+- Irreducible core: single-file or gist + section tour; optional commit-granular twin for big builds.  
+- Scoreboard loop: cheap metric + one mutable workspace = agent iteration without vibes.  
+- Year review: stack before/after + notable list + paradox TL;DR syncs the field.  
 - Handoff: when a post goes viral, promote the durable artifact to an agent-readable idea file.
 
-**Tweet 7 (discipline)**  
-Pair every autonomy claim with one boring guardrail you actually use (tests, review gates, permissions). Credibility is in the pairing.
+**Tweet 8 (discipline)**  
+Pair every autonomy claim with one boring guardrail you actually use (tests, review gates, permissions). If benchmarks lie, say what you trust instead.
 
-**Tweet 8 (CTA + link)**  
-Repo (MIT): paste-ready install in the README.
+**Tweet 9 (CTA + link)**  
+Repo (MIT): paste-ready install + public corpus index for primary sources.
 
 `https://github.com/ERerGB/karpathy-idea-pattern-skillset`

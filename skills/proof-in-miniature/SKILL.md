@@ -10,9 +10,10 @@ Distilled pattern: pair a **strong claim** with the **smallest artifact** that m
 ## Steps
 
 1. **State the threshold in one sentence** — What became true that was not true last quarter?
-2. **Shrink the proof** — Prefer lines-of-code count, wall-clock duration, hardware budget, and a public entrypoint (script, gist, repo tag).
+2. **Shrink the proof** — Prefer lines-of-code count, wall-clock duration, hardware budget, and a public entrypoint. **Vessel options** (pick one primary): single file or gist, minimal repo tag, notebook/Colab duplicate of the same source.
 3. **Show one loop** — If the idea is “agentic,” show initialize → act → observe → revise once. One lap beats a architecture diagram.
 4. **Say what is still brittle** — One paragraph on failure modes preserves trust.
+5. **Label the baseline** — If the artifact is meant to be forked into serious systems, say **“intentionally bare bones”** (or similar) so nobody mistakes minimal for production-complete.
 
 ## Anti-patterns
 
