@@ -1,0 +1,35 @@
+# X/Twitter parameterized config for this repo (tweet skill schema)
+# https://github.com/ERerGB/karpathy-idea-pattern-skillset
+
+profile:
+  narrative_core_file: doc/narrative-core.md
+  # Set to your X handle (GitHub user may differ).
+  account_handle: "@YOUR_X_HANDLE"
+  ralph_scratchpad: .cursor/ralph/scratchpad.md
+
+article:
+  enabled: true
+  base_url: https://github.com/ERerGB/karpathy-idea-pattern-skillset
+  default_cta: Read the README and copy the skills you need
+  link_placement: end_of_thread
+  thread:
+    max_tweets: 10
+    hook_style: [contrarian, pain_promise]
+
+post:
+  enabled: true
+  content_pillars: [educational, build_in_public, opinion]
+  mix_guidance:
+    value_posts: 0.45
+    engagement_posts: 0.2
+    threads: 0.25
+    personal_or_story: 0.1
+
+comment:
+  enabled: true
+  discovery_first: true
+  min_faves_hint: 500
+  unique_copy_per_target: true
+  avoid_duplicate_paste: true
+  target_account_size: 5x_to_20x_followers
+  reply_early_minutes: 15

@@ -1,0 +1,3 @@
+# Narrative core (SSOT)
+
+Public ideas are shifting from “here is my repo” to “here is the **pattern** your agent can instantiate.” This repository distills a repeatable **idea release path**: surface the discomfort of a real workflow change, name the new abstraction, pair the claim with a minimal proof, hand off an agent-readable idea file when attention spikes, and always weld hype to a single concrete discipline. Use it when shipping posts, READMEs, or internal memos about agent-era engineering—not as impersonation of any individual, but as a **literacy template** for technical leadership in public.
