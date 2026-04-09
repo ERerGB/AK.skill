@@ -53,6 +53,13 @@ done
 
 In chat: reference a skill by path, e.g. “follow `~/.cursor/skills/idea-file-handoff/SKILL.md`.”
 
+### Why `/` might not list a skill (Cursor)
+
+- Each `SKILL.md` must start with YAML **frontmatter**: `name` (lowercase, hyphens) and `description` (non-empty). Without it, Cursor often **does not index** the skill for `/` or automatic discovery.
+- After installing or changing skills, **fully restart Cursor** (or Reload Window) so the index refreshes.
+- Invoke with the **`name` field** or folder name, e.g. `/paradigm-surface`, `/idea-file-handoff`. Check **Settings → Rules → Agent Decides** to confirm the skill appears.
+- **Symlinks** to skill folders were unreliable in older Cursor builds; prefer **Cursor 2.5+**, or use `cp -R` into `~/.cursor/skills/` if discovery still fails.
+
 ## X / Tweet workflow
 
 | File | Purpose |

@@ -1,3 +1,10 @@
+---
+name: proof-in-miniature
+description: >-
+  Pairs strong claims with the smallest falsifiable proof (script, gist, notebook, or runbook) and labels bare-bones baselines clearly.
+  Use when arguing that a capability crossed a threshold or when credibility must fit in one link.
+---
+
 # Proof in Miniature
 
 Distilled pattern: pair a **strong claim** with the **smallest artifact** that makes the claim falsifiable (code, experiment log, or reproducible runbook).

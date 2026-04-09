@@ -1,3 +1,10 @@
+---
+name: idea-file-handoff
+description: >-
+  Turns attention spikes into durable agent-readable idea files: invariants, policy vs mechanism, paste blocks for tools, and discussion-friendly hosting.
+  Use when a post goes viral but the value is the pattern, not a frozen app or private dotfiles dump.
+---
+
 # Idea File Handoff
 
 Distilled pattern: when a hot take outgrows a post, promote the durable artifact to an **idea file** — a spec an agent can implement in *your* environment, not a frozen app.

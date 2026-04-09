@@ -1,3 +1,10 @@
+---
+name: paradigm-surface
+description: >-
+  Surfaces paradigm shifts in public technical writing: open with lived workflow change, name one abstraction (optional metaphor or era label), and list the real stack honestly.
+  Use when posting threads, READMEs, or memos about how tools or the profession are changing.
+---
+
 # Paradigm Surface
 
 Distilled pattern: lead with **lived practitioner discomfort**, then **name the shift** so the field can argue with a handle.

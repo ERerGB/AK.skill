@@ -1,3 +1,10 @@
+---
+name: scoreboard-loop
+description: >-
+  Defines a cheap-to-evaluate score and one mutable workspace so agents iterate from numbers; separates immutable prep from editable experiment files.
+  Use when designing overnight experiment loops, autoresearch-style harnesses, or metric-gated agent iteration.
+---
+
 # Scoreboard Loop
 
 Distilled pattern: give agents (or humans) a **cheap-to-score objective** and a **single mutable workspace**; let iteration be driven by numbers, not vibes.

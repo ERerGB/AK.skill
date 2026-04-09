@@ -1,3 +1,10 @@
+---
+name: hype-discipline-pairing
+description: >-
+  Welds bold forecasts to plain limits, one real verification habit, paradox framing (capable yet brittle), and honest benchmark skepticism.
+  Use when writing about agents, autonomy, or LLMs and preserving trust in the same breath as excitement.
+---
+
 # Hype–Discipline Pairing
 
 Distilled pattern: keep **radical forecasts** credible by **locking arms with boring engineering** in the same narrative pass.

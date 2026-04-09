@@ -1,3 +1,10 @@
+---
+name: irreducible-core
+description: >-
+  Ships a terminal simplification claim with a single-file or gist core, section-by-section teaching, efficiency vs essence split, and optional commit-granular video or repo twin.
+  Use when demystifying a stack or teaching from minimal runnable code.
+---
+
 # Irreducible Core
 
 Distilled pattern: ship a **terminal simplification** claim—*this is the smallest honest container for the idea*—then **teach through the file** section by section.

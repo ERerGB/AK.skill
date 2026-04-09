@@ -1,3 +1,10 @@
+---
+name: stack-year-review
+description: >-
+  Structures longform year or phase reviews: stack at t0 vs t1, personally notable bullets, benchmark fatigue honesty, paradox TL;DR, and deep links.
+  Use when synchronizing audience mental models after a fast-moving year in tech.
+---
+
 # Stack Year Review
 
 Distilled pattern: once a year (or after a phase change), publish a **before/after picture of the production stack** plus a **personal highlight reel**—notable papers, releases, and intuitions—closed with tensions instead of a single hype arc.
