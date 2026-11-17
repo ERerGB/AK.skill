@@ -1,40 +1,34 @@
-# skills-auditor registration (AK.skill)
+# Skills Auditor registration (AK.skill)
 
-Use this when you want the [skills-auditor](https://github.com/ERerGB/skills-auditor) CLI to **audit, dedupe, and route** this pack alongside your global Cursor/Claude skill trees.
+Use [Skills Auditor](https://github.com/ERerGB/skills-auditor) to inspect this pack together with the intended host install roots. Follow its current `SKILL.md` for the inspect → plan → authorized apply → verify lifecycle; the former embedded Bash pipeline is no longer the interface.
 
-## What gets scanned
+## Optional agent configuration
 
-Point **`SKILLS_AUDITOR_EXTRA_ROOTS`** at the directory that **contains** the skill folders (`paradigm-surface/`, `ak/`, …)—i.e. this repo’s **`skills/`** directory, not the repo root.
-
-## One-shot env file
-
-Copy or symlink:
-
-- `config/skills-auditor.ak.env`
-
-Then:
+`config/skills-auditor.ak.env` supplies this pack's `skills/` directory to the Auditor agent entry. Adjust the checkout path:
 
 ```bash
+export AK_SKILL_ROOT="/path/to/AK.skill"
 set -a
-source ~/AK.skill/config/skills-auditor.ak.env   # adjust path if you cloned elsewhere
+source "$AK_SKILL_ROOT/config/skills-auditor.ak.env"
 set +a
-export SKILLS_AUDITOR_MODE=full
-# Preview only: export SKILLS_AUDITOR_DRY_RUN=1
 ```
 
-Run the **full pipeline** recipe from the skills-auditor `SKILL.md` (bash `case` block: discover → dedup → route → traces → sync → close).
+These variables describe the agent's maintenance scope. The CLI does not automatically translate them into arguments. They do not authorize applying changes. `SKILLS_AUDITOR_WITH_DRIFT=1` requests remote drift inspection, which fetches Git remotes; the example defaults to 0.
 
-## Minimal manual invocation
+## Direct inspection
 
-If you already have `skills-audit` on `PATH`:
+Use the actual host roots for this environment. For example:
 
 ```bash
-AK_SKILLS="$HOME/AK.skill/skills"
-skills-audit audit --skills-dir "$HOME/.cursor/skills" --skills-dir "$HOME/.claude/skills" --skills-dir "$AK_SKILLS" --with-drift
+AK_SKILLS="/path/to/AK.skill/skills"
+skills-audit audit --help
+skills-audit audit --skills-dir "$HOME/.codex/skills" --skills-dir "$AK_SKILLS"
 ```
 
-Replace `$HOME/AK.skill` with your clone path. **Dedup/route** with `--apply` follow the upstream skill’s default pipeline when you are not in dry-run mode.
+Add `--with-drift` only when remote fetch is intended. Audit output and source hashes do not establish that the host actually discovered or used every skill.
 
-## Note
+## Installation and maintenance
 
-skills-auditor **does not** install skills into `~/.cursor/skills/` by itself when there are no duplicate names. For Cursor to load **`/ak`**, still copy or symlink `skills/ak` (and siblings) per the main README Quickstart.
+Auditing does not itself register the pack. For adoption, inspect `skills-audit integrate --help` and prepare a plan for `skills/` and the chosen host (for example `--target codex@global`). Review its target paths and archive behavior before applying within the user's authorized scope, then verify the receipt and fresh host discovery. Already managed installations must use their existing lifecycle, not an ad hoc relink.
+
+For metadata, duplicates or variants, use only the relevant current maintenance command. Do not assume a broad audit automatically applies deduplication/routing, and do not treat archive or deletion as an implicit default authorization. Preserve existing local edits and differing variants for review.
