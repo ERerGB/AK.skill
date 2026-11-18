@@ -18,10 +18,10 @@ Distilled pattern: once a year (or after a phase change), publish a **before/aft
 
 1. **Draw the stack at t₀ and t₁** — What did “default serious stack” look like at year start vs end? Boxes and arrows beat prose.
 2. **List what actually moved capability** — RL, reasoning traces, tool use, evals, product layer—whatever you believe mattered; keep each bullet falsifiable.
-3. **Name one ontology shift** — How should readers *feel* the new object? (e.g., from “training animals” to “summoning ghosts”—use your own metaphor; do not copy others’ wording.)
+3. **Name a supported ontology shift, if any** — If the evidence shows continuity instead, say so. How should readers understand the object? (e.g., from “training animals” to “summoning ghosts”—use your own metaphor; do not copy others’ wording.)
 4. **Admit benchmark fatigue** — If leaderboards diverged from felt reality, say so and point to **what you trust instead** (tasks, demos, production metrics).
 5. **Product / ecosystem paragraph** — How did the “app layer” thicken? (IDEs, agents, vertical bundles.) Ask the open economic question: who captures value?
-6. **TL;DR with paradox** — One paragraph that holds **both** “smarter than expected” and “dumber than expected” (or your field’s equivalent)—signals intellectual honesty.
+6. **TL;DR with the actual tension** — Summarize supported gains and limits. Use a paradox only when the evidence warrants one; do not manufacture a balanced pair.
 7. **Deep links** — Point to your longer essays or talks for readers who want rabbit holes.
 
 ## Anti-patterns
@@ -33,5 +33,5 @@ Distilled pattern: once a year (or after a phase change), publish a **before/aft
 ## Output shape
 
 - Diagram or bullet stack: then vs now.
-- 5–15 “notable” bullets (mixed scope: infra + product + science).
+- Only supported notable items, scaled to the user’s requested length; 5–15 is a longform example, not a quota.
 - TL;DR: tension + forward-looking open field.

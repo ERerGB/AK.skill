@@ -16,7 +16,7 @@ Distilled pattern: lead with **lived practitioner discomfort**, then **name the 
 
 ## Steps
 
-1. **Anchor in first-person state** — What changed in *your* workflow this week or month? Avoid generic industry trends until the reader accepts your ground truth.
+1. **Anchor in first-person state** — Use the author’s supplied workflow observation when available. If there is no first-person evidence, use an attributed observation or a clearly framed question; never invent lived experience or a recent timestamp. Ground the shift before generalizing.
 2. **Name one layer** — Give the new abstraction a short label (new word, or a tight phrase). The label is a compression artifact for discussion.
 3. **List the stack honestly** — Enumerate the moving parts you are actually juggling (agents, prompts, tools, permissions, IDE, etc.). Dense lists signal credibility; keep them concrete.
 4. **Invite the skill gap** — Frame “catching up” as learnable orchestration, not moral failure. The goal is motion in the replies, not self-flagellation theater.

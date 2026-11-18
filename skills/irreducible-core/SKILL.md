@@ -16,7 +16,7 @@ Distilled pattern: ship a **terminal simplification** claim—*this is the small
 
 ## Steps
 
-1. **State the compression claim** — One sentence: why you cannot delete another line without lying or hiding a real dependency.
+1. **State the compression claim** — One sentence: what this example preserves, what it omits, and which dependencies remain. Claim absolute minimality only when you can demonstrate it; a useful small teaching artifact does not require that proof.
 2. **Pick one vessel** — Prefer a **single file** or a **gist** as the canonical artifact; add Colab/notebook only as a runnable duplicate, not the source of truth.
 3. **Walk the reader in document order** — Dataset → core math → model → train → sample (or your domain’s equivalent). Each block answers “what problem does this solve?”
 4. **Name what is “just efficiency”** — Separate the invariant algorithm from speed tricks so experts know where to optimize without confusing beginners.
@@ -34,7 +34,7 @@ When the full stack is too large for one file, pair the **minimal core** with a 
 
 ## Output shape
 
-- One sentence: irreducibility claim.
+- One sentence: bounded simplification claim.
 - One link: canonical minimal artifact.
 - Outline: section titles matching the file.
 - One paragraph: efficiency vs essence.

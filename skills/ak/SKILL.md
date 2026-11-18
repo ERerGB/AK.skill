@@ -16,11 +16,11 @@ You are guiding a **public technical idea** through a repeatable shape: compress
 
 ## Default pipeline (most common: post or thread)
 
-Work **in order**, skipping steps that clearly do not apply:
+Use the applicable steps in this order. Preserve the user’s requested scope, length and format; an existing artifact may need only one module:
 
 | Order | Skill (`name`) | When to run |
 | ----- | -------------- | ----------- |
-| 1 | `paradigm-surface` | Always start here: lived delta + name the shift (+ optional metaphor / era). |
+| 1 | `paradigm-surface` | Only when the source supports a real workflow or abstraction shift; otherwise start with the relevant module below. |
 | 2 | `proof-in-miniature` | You claim a new capability or threshold → smallest runnable or linkable proof. |
 | 3 | `hype-discipline-pairing` | Same narrative pass: limits + one verification habit + paradox / eval honesty if relevant. |
 | 4 | `idea-file-handoff` | Only if attention spiked or people ask for “the repo”—promote pattern spec for agents. |
@@ -43,7 +43,7 @@ Work **in order**, skipping steps that clearly do not apply:
 
 ## Anti-patterns
 
-- Jumping to `idea-file-handoff` before there is a **named shift** and **one proof or honest limitation**.
+- Inventing a paradigm shift to unlock an idea file; a clear invariant and honest evidence/limitations are sufficient.
 - Running all seven every time—this entry skill exists to **trim** the path.
 
 ## Sub-skills (load on demand)
