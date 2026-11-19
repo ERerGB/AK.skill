@@ -7,30 +7,19 @@ description: >-
 
 # Scoreboard Loop
 
-Distilled pattern: give agents (or humans) a **cheap-to-score objective** and a **single mutable workspace**; let iteration be driven by numbers, not vibes.
+Design bounded iteration around an evaluator whose result changes the next decision.
+Reuse the user's objective and constraints; do not substitute a convenient metric.
 
-## When to use
+Define the score or task rubric, hard gates, baseline, evaluator command and allowed
+edit surface before a run. Separate immutable evaluation data/preparation from the
+candidate so the optimizer cannot improve its score by changing the measurement.
+If a scorer defect must be repaired, record that separately and rebaseline.
 
-- You want continuous improvement (training code, prompts, configs, pipelines) without hand-running every experiment.
-- You can define a metric that is **efficient to evaluate** relative to the cost of proposing changes.
+Provide a command for one experiment and a log of candidate revision, result and
+accept/reject decision. Set a finite cycle/time/resource budget before unattended
+iteration; keep the best verified candidate on timeout or failure. A small baseline
+can be a reusable template without claiming production completeness.
 
-## Steps
-
-1. **Freeze the interface** — One script or file is the contract: edit here, run `train` / `eval`, read score. Everything else is optional. When you need hygiene, split **immutable prep** (data, constants) from **mutable experiment surface** so diffs stay reviewable.
-2. **Publish the scoreboard** — Stdout table, log file, or wandb-style trail; the loop must make “better / worse” unambiguous.
-3. **Let the optimizer be dumb but persistent** — Agents propose diffs; the metric decides survival. Novelty comes from breadth of search, not from charisma in the proposal.
-4. **Keep the baseline intentionally bare** — Frame the first version as a **template for a pattern**, not a finished product—so others fork the loop, not your hyperparameters.
-5. **Human owns objective and constraints** — What is optimized, what is forbidden, and what requires review stays outside the agent.
-
-## Anti-patterns
-
-- Fuzzy goals (“make it better”) with no scalar or rubric.
-- Letting agents change eval code and training code in one step without separation of duties.
-- Chasing leaderboard metrics you admit are gamed or meaningless—pair with epistemic honesty (see **Hype–Discipline Pairing**).
-
-## Output shape
-
-- Objective function (one paragraph).
-- Command(s) to reproduce one experiment.
-- What the agent is allowed to edit vs read-only.
-- One paragraph: what this loop does *not* solve.
+The user owns the objective, forbidden changes and review boundaries. State what
+the metric misses, especially when it can be gamed. Do not launch an overnight
+job, paid run or recurring schedule merely because the design supports one.

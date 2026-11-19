@@ -7,31 +7,18 @@ description: >-
 
 # Stack Year Review
 
-Distilled pattern: once a year (or after a phase change), publish a **before/after picture of the production stack** plus a **personal highlight reel**—notable papers, releases, and intuitions—closed with tensions instead of a single hype arc.
+Explain how a technical stack changed over the user's specified period. Ground
+both endpoints in supplied or verified sources; personal observations need actual
+author evidence, and current external facts need checking.
 
-## When to use
+Build a before/after stack, then select changes that explain capability or workflow
+rather than listing every headline. Preserve dates, source links and uncertainty.
+Distinguish personal experience, measured results and interpretation. Discuss
+benchmark mismatch, ecosystem economics or a new abstraction only when the material
+supports them; continuity is a valid conclusion.
 
-- The field moved fast and your audience only saw fragments; you want to **synchronize mental models**.
-- You need a longform piece that still rewards skimming.
-
-## Steps
-
-1. **Draw the stack at t₀ and t₁** — What did “default serious stack” look like at year start vs end? Boxes and arrows beat prose.
-2. **List what actually moved capability** — RL, reasoning traces, tool use, evals, product layer—whatever you believe mattered; keep each bullet falsifiable.
-3. **Name a supported ontology shift, if any** — If the evidence shows continuity instead, say so. How should readers understand the object? (e.g., from “training animals” to “summoning ghosts”—use your own metaphor; do not copy others’ wording.)
-4. **Admit benchmark fatigue** — If leaderboards diverged from felt reality, say so and point to **what you trust instead** (tasks, demos, production metrics).
-5. **Product / ecosystem paragraph** — How did the “app layer” thicken? (IDEs, agents, vertical bundles.) Ask the open economic question: who captures value?
-6. **TL;DR with the actual tension** — Summarize supported gains and limits. Use a paradox only when the evidence warrants one; do not manufacture a balanced pair.
-7. **Deep links** — Point to your longer essays or talks for readers who want rabbit holes.
-
-## Anti-patterns
-
-- A list of headlines anyone could copy from TechCrunch.
-- One-note optimism or one-note doom.
-- No personal timestamp (“as practitioner/builder/researcher, I noticed…”).
-
-## Output shape
-
-- Diagram or bullet stack: then vs now.
-- Only supported notable items, scaled to the user’s requested length; 5–15 is a longform example, not a quota.
-- TL;DR: tension + forward-looking open field.
+Scale the result to the requested length. A diagram or concise stack comparison,
+a few supported changes, and the unresolved consequence can be enough. End with
+the actual gains, limits and open question; do not manufacture a paradox, personal
+timestamp, ontology shift or fixed number of notable items. Link deeper material
+when useful.
